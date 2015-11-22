@@ -1,383 +1,396 @@
-<html>
-   <head>
-      <title>Home page</title>
-      <link rel="stylesheet" type="text/css" href="<?= DOMAIN . '/public/bootstrap/css/login.css' ?>">
-      <link rel="stylesheet" type="text/css" href="<?= DOMAIN . '/public/bootstrap/css/view.css'?>">
-      <link rel="stylesheet" type="text/css" href="<?= DOMAIN . '/public/bootstrap/css/bootstrap.css'?>">
-      </head>
-         <textarea name="csi" id="csi" style="display:none"></textarea>
-         <div class="big" id="searchform">
-            <div id="gb" class="gb_T">
-               <div id="gbw">
-                  <div style="top:0;left:0;right:0;width:100%">
-                     <div class="gb_Ka gb_ae gb_R gb_9d gb_T" style="min-width: 120px;">
-                     <?php if(false){?>    
-                     <div style="margin-top: 15px; font-size: 1.1em;">Welcome phubalan <span class="mn-dwn-arw" style="top: 24px; right: 16px;"></span></div>
-                     <?php } else { ?>
-                     <div style="margin-top: 15px; font-size: 1.1em;">
-                         <span><a href="/Login.php" class="ssn-loc">Login</a></span>
-                         <span><a href="/Register.php" class="ssn-loc">Sign up</a></span>
-                     </div>
-                     <?php }?>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="sfbg nojsv" style="margin-top: -15px; visibility: visible;">
-               <div class="sfbgg"></div>
-            </div>
-            <form class="tsf" action="/search" style="overflow:visible" id="tsf" method="GET" name="f" onsubmit="return q.value!=''" role="search">
-               <input value="psy-ab" name="sclient" type="hidden">
-               <div data-jibp="" data-jiis="uc" id="tophf"><input type="hidden" name="biw" value="1301"><input type="hidden" name="bih" value="310"></div>
-               <div class="tsf-p">
-                  <div class="nojsv logocont" id="logocont" style="visibility: visible;">
-                     <h1><a id="logo" href="#" title="Go to Google Home"><img width="167" height="410" src="https://www.google.co.in/images/nav_logo231.png" alt="Google"></a></h1>
-                  </div>
-                  <div class="sfibbbc">
-                     <div class="sbtc" id="sbtc">
-                        <div class="sbibtd">
-                           <div class="nojsv sfopt" id="sfopt" style="visibility: visible;">
-                              <div class="lsd">
-                                 <div id="ss-bar" style="white-space:nowrap;z-index:98" data-jiis="uc"></div>
-                              </div>
-                           </div>
-                           <div class="sfsbc">
-                              <div class="nojsb" style="display: block;">
-                                 <div class="ds" id="sbds">
-                                    <div class="lsbb kpbb" id="sblsbb">  <button class="lsb" value="Search" aria-label="Google Search" name="btnG" type="submit"> <span class="sbico"></span> </button> </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="sbibod " id="sfdiv">
-                              <div class="gstl_0 sbib_a" style="height: 28px;">
-                                 <div class="sbib_d" id="sb_chc0" dir="ltr"></div>
-                                 <div class="gsst_b sbib_c" id="gs_st0" dir="ltr" style="line-height: 28px;">
-                                    <a class="gsst_a" href="javascript:void(0)" aria-label="Search by voice"><span class="gsri_a" id="gsri_ok0"></span></a>
-                                    <div id="chmo">
-                                       <div id="chm">
-                                          <div class="chmp">
-                                             <div class="chmpi chmp"></div>
-                                          </div>
-                                          <div style="display: none;">
-                                             <div class="chma"></div>
-                                             <div>Not listening. Something went wrong.</div>
-                                             <div><a>Restart listening</a><a style="padding-left: 10px;">Help</a></div>
-                                          </div>
-                                          <div style="display: none;">
-                                             Hotword detection is off.
-                                             <div><a>Start listening for "Ok Google"</a></div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="sbib_b" id="sb_ifc0" dir="ltr">
-                                    <div id="gs_lc0" style="position: relative;">
-                                       <input class="gsfi" id="lst-ib" maxlength="2048" name="q" autocomplete="off" title="Search" type="text" value="" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="both" dir="ltr" spellcheck="false" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 6; left: 0px; outline: none; background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;">
-                                       <div class="gsfi" id="gs_sc0" style="color: transparent; padding: 0px; position: absolute; z-index: 2; white-space: pre; background: transparent;"></div>
-                                       <input class="gsfi" disabled="" autocomplete="off" autocapitalize="off" aria-hidden="true" id="gs_taif0" dir="ltr" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 1; -webkit-text-fill-color: silver; color: silver; left: 0px; background-color: transparent;"><input class="gsfi" disabled="" autocomplete="off" autocapitalize="off" aria-hidden="true" id="gs_htif0" dir="ltr" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 1; -webkit-text-fill-color: silver; color: silver; transition: all 0.218s; opacity: 0; text-align: left; left: 0px; background-color: transparent;">
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="gstl_0 sbdd_a" style="min-width: 589px; top: 39px; position: absolute; left: 1px;">
-                           <div class="fl"></div>
-                           <div>
-                              <div class="sbdd_b" style="display: none;"></div>
-                              <div>
-                                 <div id="pocs" style="display:none;left:0px;white-space:nowrap;position:absolute">
-                                    <div id="pocs0"><span><span>Google</span> Instant is unavailable. Press Enter to search.</span>&nbsp;<a href="#">Learn more</a></div>
-                                    <div id="pocs1"><span>Google</span> Instant is off due to connection speed. Press Enter to search.</div>
-                                    <div id="pocs2">Press Enter to search.</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div></div>
-                  </div>
-                  <div class="jsb" style="padding-top: 18px; display: none;">
-                     <center><input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk"><input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" jsaction="sf.lck"></center>
-                  </div>
-               </div>
-               <div class="gsfi" style="color: rgb(0, 0, 0); padding: 0px; position: absolute; white-space: pre; background: transparent;"></div>
-               <input type="hidden" name="oq"><input type="hidden" name="gs_l"><input type="hidden" name="pbx" value="1">
-            </form>
-         </div>
-         <div id="gac_scont"></div>
-         <div class="spch s2fp-h" style="display:none" id="spch">
-            <div class="spchc" id="spchc">
-               <div class="_o3">
-                  <div class="_AM">
-                     <span class="_CMb" id="spchl"></span>
-                     <span class="button" id="spchb">
-                        <div class="_wPb">
-                           <span class="_AUb"></span>
-                           <div class="_Fjd"><span class="_oXb"></span><span class="_dWb"></span></div>
-                        </div>
-                     </span>
-                  </div>
-                  <div class="_gjb"><span class="spcht" id="spchi" style="color:#777"></span><span class="spcht" id="spchf" style="color:#000"></span></div>
-                  <div class="google-logo"></div>
-               </div>
-               <div class="_ypc">
-                  <div class="_zpc"></div>
-               </div>
-            </div>
-            <div class="close-button" id="spchx">×</div>
-         </div>
-         <div class="content" data-jiis="cc" id="main">
-            <div data-jibp="h" data-jiis="uc" id="lb"></div>
-            <div data-jibp="h" data-jiis="uc" id="ilrpc"></div>
-            <div data-jibp="" data-jiis="uc" id="easter-egg"></div>
-            <div data-jiis="bp" id="cnt" class="big">
-               <div data-jibp="h" data-jiis="uc" id="bst" style=""></div>
-               <div data-jibp="h" data-jiis="uc" id="top_nav">
-                  <div jsl="$t t-js5htJpaNsk;$x 0;" class="r-i_LVIFJdvWNE">
-                     <div class="hdtbna notl" id="hdtb" role="navigation" tabindex="0">
-                        <div id="hdtbSum">
-                           <div id="hdtb-s" style="white-space:nowrap">
-                              <div id="hdtb-msb">
-                                 <div class="hdtb-mitem hdtb-msel hdtb-imb">Newest</div>
-                                 <div class="hdtb-mitem hdtb-imb"><a class="q qs" href="#">Most agreed</a></div>
-                                 <div class="hdtb-mitem hdtb-imb dropdown">
-                                     <a class="q qs dropdown-toggle" data-toggle="dropdown" href="#">Any category</a>
-                                     <span class="mn-dwn-arw"></span>
-                                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Restaurent</a></li>
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Restaurent</a></li>
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Restaurent</a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="hdtb-mitem hdtb-imb dropdown">
-                                    <a class="q qs dropdown-toggle" href="#" data-toggle="dropdown">Any country</a>
-                                    <span class="mn-dwn-arw"></span>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USA</a></li>
-                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INDIA</a></li>
-                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CANADA</a></li>
-                                    </ul>    
-                                 </div>
-                                 <div class="hdtb-mitem hdtb-imb dropdown">
-                                     <a class="q qs dropdown-toggle" href="#" data-toggle="dropdown">Any time</a>
-                                     <span class="mn-dwn-arw"></span>
-                                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last 5 days</a></li>
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last 2 weeks</a></li>
-                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last month</a></li>
-                                     </ul>
-                                 </div>
-                              </div>
-                              <ol id="ab_ctls">
-                                 <li class="ab_ctl">
-                                    <a class="ab_button" href="#" aria-expanded="false" aria-haspopup="true" id="abar_button_opt" role="button" tabindex="0" unselectable="on" jsaction="m.tdd;keydown:m.hbke;keypress:m.mskpe">Post a warn message</a>
-                                 </li>
-                              </ol>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div data-jibp="h" data-jiis="uc" id="before-appbar"></div>
-               <div class="appbar" data-jibp="h" data-jiis="uc" id="appbar">
-                  <div id="extabar">
-                     <div id="topabar" style="position:relative">
-                        <div class="ab_tnav_wrp" id="slim_appbar">
-                           <div id="sbfrm_l" style="visibility: visible;">
-                              <div id="resultStats">
-                                 About 5,95,00,000 results
-                                 <nobr> (0.26 seconds)&nbsp;</nobr>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="botabar" style="display:none"></div>
-                  </div>
-                  <div></div>
-               </div>
-               <div class="mw" data-jibp="h" data-jiis="uc" id="ucs"></div>
-               <div class="mw">
-                  <div id="rcnt" style="clear:both;position:relative;zoom:1">
-                     <div data-jibp="h" data-jiis="uc" id="ataw">
-                        <div id="atvcap"></div>
-                     </div>
-                     <div data-jibp="h" data-jiis="uc" id="bcenter">
-                        <div style="display:none;visibility:visible" id="er"></div>
-                        <div id="gko-srp-sp"></div>
-                        <div class="col" style="width:0"></div>
-                     </div>
-                     <div class="col" style="width:0">
-                        <div id="center_col" style="visibility: visible;">
-                           <div data-jibp="h" data-jiis="uc" id="taw">
-                              <div></div>
-                              <div style="padding:0 8px">
-                                 <div class="med"></div>
-                              </div>
-                              <div id="tvcap"></div>
-                           </div>
-                           <div class="med" id="res" role="main">
-                              <div data-jibp="h" data-jiis="uc" id="topstuff">
-                                 <div class="_cy" id="msg_box" style="display:none">
-                                    <p class="card-section ps-sru"><span><span class="spell" id="srfm"></span>&nbsp;<a class="spell" id="srfl"></a><br></span><span id="sif"><span class="spell_orig" id="sifm"></span>&nbsp;<a class="spell_orig" id="sifl"></a><br></span></p>
-                                 </div>
-                              </div>
-                              <div data-jibp="h" data-jiis="uc" id="search" style="">
-                                 <div data-ved="0CBkQGmoVChMIv7a0xuuNyAIVwhmOCh2yDA6j">
-                                    <!--a-->
-                                    <h2 class="hd">Search Results</h2>
-                                    <div data-async-context="query:dds" id="ires">
-                                       <ol eid="svYCVr-VHsKzuASymbiYCg" id="rso">
-                                          <div class="srg">
-                                             <div class="g">
-                                                <!--m-->
-                                                <div class="rc" data-hveid="27">
-                                                   <h3 class="r"><a href="#">Jhon is Warning You about McDonald's Restaurent</a></h3>
-                                                   <div class="s">
-                                                      <div>
-                                                         <div class="f kv _SWb" style="white-space:nowrap">
-                                                            <cite class="_Rm">Malaysia > Penang >  Bayan > Lepas</cite>
-                                                            <div class="action-menu ab_ctl">
-                                                               <a class="_Fmb ab_button" href="#" id="am-b0" aria-label="Result details" aria-expanded="false" aria-haspopup="true" role="button" jsaction="m.tdd;keydown:m.hbke;keypress:m.mskpe" data-ved="0CB0Q7B0wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j"><span class="mn-dwn-arw"></span></a>
-                                                               <div class="action-menu-panel ab_dropdown" role="menu" tabindex="-1" jsaction="keydown:m.hdke;mouseover:m.hdhne;mouseout:m.hdhue" data-ved="0CB4QqR8wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j">
-                                                                  <ul>
-                                                                     <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="#">Cached</a></li>
-                                                                  </ul>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <span class="st">Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla. Test yor Internet connection bandwidth Ookla. Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <!--n-->
-                                             </div>
-                                             <div class="g">
-                                                <!--m-->
-                                                <div class="rc" data-hveid="27">
-                                                   <h3 class="r"><a href="#">Jhon is Warning You about McDonald's Restaurent</a></h3>
-                                                   <div class="s">
-                                                      <div>
-                                                         <div class="f kv _SWb" style="white-space:nowrap">
-                                                            <cite class="_Rm">Malaysia > Penang >  Bayan > Lepas</cite>
-                                                            <div class="action-menu ab_ctl">
-                                                               <a class="_Fmb ab_button" href="#" id="am-b0" aria-label="Result details" aria-expanded="false" aria-haspopup="true" role="button" jsaction="m.tdd;keydown:m.hbke;keypress:m.mskpe" data-ved="0CB0Q7B0wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j"><span class="mn-dwn-arw"></span></a>
-                                                               <div class="action-menu-panel ab_dropdown" role="menu" tabindex="-1" jsaction="keydown:m.hdke;mouseover:m.hdhne;mouseout:m.hdhue" data-ved="0CB4QqR8wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j">
-                                                                  <ul>
-                                                                     <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="#">Cached</a></li>
-                                                                  </ul>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <span class="st">Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla. Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <!--n-->
-                                             </div>
-                                             <div class="g">
-                                                <!--m-->
-                                                <div class="rc" data-hveid="27">
-                                                   <h3 class="r"><a href="#">Jhon is Warning You about McDonald's Restaurent</a></h3>
-                                                   <div class="s">
-                                                      <div>
-                                                         <div class="f kv _SWb" style="white-space:nowrap">
-                                                            <cite class="_Rm">Malaysia > Penang >  Bayan > Lepas</cite>
-                                                            <div class="action-menu ab_ctl">
-                                                               <a class="_Fmb ab_button" href="#" id="am-b0" aria-label="Result details" aria-expanded="false" aria-haspopup="true" role="button" jsaction="m.tdd;keydown:m.hbke;keypress:m.mskpe" data-ved="0CB0Q7B0wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j"><span class="mn-dwn-arw"></span></a>
-                                                               <div class="action-menu-panel ab_dropdown" role="menu" tabindex="-1" jsaction="keydown:m.hdke;mouseover:m.hdhne;mouseout:m.hdhue" data-ved="0CB4QqR8wAGoVChMIv7a0xuuNyAIVwhmOCh2yDA6j">
-                                                                  <ul>
-                                                                     <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="#">Cached</a></li>
-                                                                  </ul>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <span class="st">Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla. Test yor Internet connection bandwidth to locations around the world with this interactive broadband speed test form Ookla</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <!--n-->
-                                             </div>
-                                       </ol>
-                                    </div>
-                                    <!--z-->
-                                 </div>
-                              </div>
-                           </div>
-                           <div data-jibp="h" data-jiis="uc" id="bottomads"></div>
-                           <div>
-                           <hr class="rgsep">
-                              <div id="foot" role="contentinfo">
-                                 <div data-jibp="h" data-jiis="uc" id="cljs"></div>
-                                 <span data-jibp="h" data-jiis="uc" id="xjs">
-                                    <div id="navcnt">
-                                       <table style="border-collapse:collapse;text-align:left;margin:30px auto 30px" id="nav">
-                                          <tbody>
-                                             <tr valign="top">
-                                                <td class="b navend"></td>
-                                                <td class="cur"><a href="#">1</a></td>
-                                                <td><a href="#">2</a></td>
-                                                <td><a href="#">3</a></td>
-                                                <td><a href="#">4</a></td>
-                                                <td><a href="#">5</a></td>
-                                                <td><a href="#">6</a></td>
-                                                <td><a href="#">7</a></td>
-                                                <td><a href="#">8</a></td>
-                                                <td><a href="#">9</a></td>
-                                                <td><a href="#">10</a></td>
-                                                <td class="b navend"><a href="#">Next</a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </span>
-                                 <div data-jibp="h" data-jiis="uc" id="gfn">
-                                 </div>
-                                 <span data-jibp="h" data-jiis="uc" id="fvf">
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col" data-jibp="h" data-jiis="uc" id="rhscol">
-                        <div id="rhs">
-                           <div id="rhs_block" jsl="$t t-5RRekjfu2Ys;$x 0;" class="r-ieJtZCBNc09A rhstc5">
-                           </div>
-                        </div>
-                     </div>
-                     <div style="clear:both"></div>
-                  </div>
-                  <div data-jibp="h" data-jiis="uc" id="bfoot"></div>
-               </div>
-               <div id="footcnt">
-                  <div>
-                     <div data-jibp="h" data-jiis="uc" id="fbarcnt" style="position: relative; height: auto; visibility: visible;">
-                        <div id="fbar" class="_Zvd" style="left:0;right:0">
-                           <div class="fbar"> <span class="_nW">  <span id="fsl">
-                           <a class="_Gs" href="#">Privacy</a>
-                           <a class="_Gs" href="#">Terms</a>
-                           <a class="_Gs" href="#">Contact us</a>
-                           </span>
-                           </span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div data-jibp="h" data-jiis="uc" id="fai"></div>
-               <div data-jibp="h" data-jiis="uc" id="footc">
-                  <div id="xfootw" data-jiis="bp">
-                     <div id="xfoot">
-                        <div id="xjsd"></div>
-                        <div id="xjsi" data-jiis="bp">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div data-jibp="h" data-jiis="uc" id="lfoot"></div>
-            </div>
-            <div data-jiis="up" data-async-type="reviewDialog" id="reviewDialog" class="y yp"></div>
-         </div>
-            <script type="text/javascript" src="<?= DOMAIN . '/public/bootstrap/js/jquery.min.js'?>"></script>
-            <script type="text/javascript" src="<?= DOMAIN . '/public/bootstrap/js/bootstrap.js'?>"></script>
-   </body>
-</html>
+<html itemscope itemtype="https://schema.org/Article">
+    <head>
+  <title></title>
+  <link rel="canonical" href='https://www.saddahaq.com/cwc15' />
+  <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+  <meta name="author" content="" />
+  <meta property="og:site_name" content="SaddaHaq" />
+  <meta property="og:title" content="Stats | Cricket World Cup 2015." />
+  <meta property="og:image" content= 'https://saddahaq.blob.core.windows.net/multimedia/stats-share.jpg'/>
+  <meta property="og:url" content='<?= SADDAHAQ ?>/stats/cwc/2015' />
+  <meta property="og:description" content="Follow the Cricket World Cup Stats, 14 Feb-28 Mar, 2015 in Australia and New Zealand" />
+  <meta property="fb:app_id" content="213492465468062" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SaddaHaqMedia">
+  <meta name="twitter:title" content="Stats | Cricket World Cup 2015">
+  <meta name="twitter:description" content="Follow the Cricket World Cup Stats, 14 Feb-28 Mar, 2015 in Australia and New Zealand.">
+  <meta name="twitter:image:src" content="https://saddahaq.blob.core.windows.net/multimedia/stats-share.jpg">
+  <meta name="twitter:domain" content="https://www.saddahaq.com">
+  <meta name="twitter:url" content="<?= SADDAHAQ ?>/stats/cwc/2015">
+  <meta itemprop="name" content="Stats | Cricket World Cup 2015">
+  <meta itemprop="description" content="Follow the Cricket World Cup Stats, 14 Feb-28 Mar, 2015 in Australia and New Zealand.">
+  <meta itemprop="image" content="https://saddahaq.blob.core.windows.net/multimedia/stats-share.jpg">
+  <style>
+        html{
+          overflow-y: auto;
+        }
+        #cwc-stats-mn-blc {
+    	text-align: center;
+    	font-family: 'Roboto',sans-serif;
+    	color:#2e3641;
+        }
+    
+        #cwc-stats-mn-blc .listNavContent {
+        width: 23%;
+        float: left;
+        margin-left: 16px;
+        border-radius: 10px;
+        /*background: url("http://p.imgci.com/db/PICTURES/CMS/162400/162447.2.jpg");*/
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+    }
+    
+    #cwc-stats-mn-blc #cwc-btm-strp{
+       max-width: 800px;
+       margin-top: 3px
+   }
+    #cwc-stats-mn-blc .listNavContent:nth-child(1) {
+        /*background-color: rgba(201, 4, 4, 0.38);*/
+    }
+    #cwc-stats-mn-blc .listNavContent:nth-child(2){
+        /*background-color: rgba(23, 193, 183, 0.58);*/
+    }
+    #cwc-stats-mn-blc .listNavContent:nth-child(3) {
+        /*background-color:rgba(249, 182, 53, 0.38)*/
+    }
+    #cwc-stats-mn-blc .listNav{
+        list-style-type: none;
+    }
+/*    #cwc-stats-mn-blc .listNav:before{
+        content: '';
+         background-image: url('http://upload.wikimedia.org/wikipedia/en/thumb/d/d2/2015_Cricket_World_Cup_Logo.svg/828px-2015_Cricket_World_Cup_Logo.svg.png'); 
+        background-size: cover; 
+    }*/
+    #cwc-stats-mn-blc .listNavContent .listNav li:last-child a {
+        border-bottom: 0;
+        }
+    #cwc-stats-mn-blc .listNavContent .title {
+        font-weight: 700 !important;
+        display: block !important;
+        line-height: 1.6em !important;
+        letter-spacing: 0.2px !important;
+        margin-bottom: 0 !important;
+        background: #0b5d95;
+        color: #FFF !important;
+        border-radius: 5px 5px 0 0 !important;
+        padding: 10px !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        transition: all 0.2s linear !important;
+        box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1) !important;
+    }
+    #cwc-stats-mn-blc .listNavContent .title {
+        background: #c1d12b;
+    }
+    #cwc-stats-mn-blc .listNavContent .listNav li{
+        /*background-color: #009587 !important;*/
+        cursor: pointer;
+        z-index: 100000000;
+    }
+    #cwc-stats-mn-blc .listNavContent .listNav a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        line-height: 34px;
+        padding: 0 10px;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        transition: all 0.2s linear;
+    }
+
+    #cwc-stats-mn-blc .listNavContent .listNav a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+    #cwc-stats-mn-blc .listNavContent .listNav a:hover {
+        opacity: 0.5 !important;
+    }
+    #cwc-stats-mn-blc .hover{
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1,1);
+    transform: translateZ(0) scale(1,1);
+    }
+    #cwc-stats-mn-blc .hover .efct{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /*content: '';*/
+        z-index: -1;
+    }
+    #cwc-stats-mn-blc #statslist .hover:before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100px !important; 
+        left: 100px !important;
+        /*content: '';*/
+        z-index: -1;
+    }
+    
+    #cwc-stats-mn-blc .hover .efct{
+        content: '';
+        background-color: inherit;
+        -webkit-transition: .3s -webkit-transform cubic-bezier(.23,1,.32,1);
+        transition: .3s transform cubic-bezier(.23,1,.32,1);
+        opacity: .5;
+        -webkit-transform: scale(2) translateX(-100%) translateY(-100%) translateZ(0) rotate(-45deg);
+        transform: scale(2) translateX(-100%) translateY(-100%) translateZ(0) rotate(-45deg);
+    }
+/*    #cwc-stats-mn-blc .hover:hover .efct {
+        -webkit-transform: scale(1.45) rotate(-45deg) translateZ(0);    
+        transform: scale(1.3) rotate(-45deg) translateZ(0);
+        -webkit-transition-duration: 1s;
+        transition-duration: 1s;
+    }*/
+    #cwc-stats-mn-blc .statsblock {
+        text-decoration: none;
+        padding: 0 0 8px 0;
+        margin-bottom: 8px;
+        zoom: 1;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(235, 235, 235, 0.4);
+        position: relative;
+        display: block;
+        color: white;
+        margin-left: 40px;
+}
+    #cwc-stats-mn-blc .lstNavhdr{
+    background-color: initial;
+    position: relative;
+    /*margin: 15px 0;*/
+    }
+    #cwc-stats-mn-blc .lstNavhdr h3{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: left;
+    line-height: 40px;
+    padding: 0;
+    background-color: transparent;
+    margin-left: 40px;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr {
+        padding: 10px 110px 10px 100px;
+        zoom: 1;
+        /*position: relative;*/
+    }
+    
+    #cwc-stats-mn-blc .plyr .player_phto_cntr {
+        position: absolute;
+        top: 0;
+        /*left: 0;*/
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        overflow: hidden;
+    }
+    #cwc-stats-mn-blc .statsblock .rank{
+        position: absolute;
+        font-weight: 700;
+        font-size: 1.1em;
+        bottom: -2px;
+        z-index: 10002;
+        right: 60px;
+    }
+    #cwc-stats-mn-blc .plyr .player_phto_cntr:before{
+        display: block;
+        position: absolute;
+        bottom: -17px;
+        left: 24px;
+        right: 0;
+        /* background: url('http://static3.icc-cricket.com/resources/img/21/elements/curve-off-white.png'); */
+        height: 0px;
+        background-color: rgba(253, 152, 0, 0.82);
+        padding-top: 32%;
+        content: '';
+        z-index: 10000;
+        -ms-transform: rotate(22deg);
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+    
+    #cwc-stats-mn-blc .statsblock .player_phto_cntr .playerPhoto {
+        position: absolute;
+        top: 10px;
+        left: 26px;
+        width: 75px;
+        display: block;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .player-per-details {
+        float: right;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .player-per-details .fname {
+        font-size: 1em;
+        font-weight: 700;
+        margin-top: 0;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .player-per-details .sname {
+        font-weight: 800;
+        font-size: 2em;
+        line-height: 1em;
+        /*margin-bottom: 10px;*/
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .player-per-details .cntry {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #c2c2c2;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .statdata {
+        /*float: right;*/
+        margin-left: -148px;
+        width: 100px;
+        background-color: rgba(193, 23, 57, 0.38);
+        cursor: pointer;
+        display: inline-block;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .statdata .meta {
+        font-size: 1em;
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .statdata .meta tr{
+        line-height: 22px;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .statdata .meta th{
+        color: #c2c2c2;
+        font-weight: 600;
+        text-align: right;
+        padding-left: 20px;
+    }
+    #cwc-stats-mn-blc .statsblock .plyr .statdata .meta td{
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 5px;
+}
+    #cwc-stats-mn-blc .statsblock .plyr .statdata .count {
+        text-align: right;
+        font-weight: 800;
+        font-size: 3.45em;
+        display: block;
+        line-height: 1.2em;
+        /*margin-right: -100px;*/
+        display: inline-block;
+        line-height: 72px;
+        vertical-align: middle;
+    }
+    #cwc-stats-mn-blc .mn-hdr h2{
+        text-align: "center";
+        font-weight: '700';
+        margin-bottom: 16px;
+        color: white;
+    }
+    #cwc-stats-mn-blc .scl-sction{
+         position: fixed;
+         right: 16px;
+         bottom: 16px;
+    }
+    #cwc-stats-mn-blc .scl-sction button{
+         height: 37px;
+         width: 37px;
+         border-radius: 50%;
+         margin-left: 8px;
+         border: none;
+         -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+         -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+    #cwc-stats-mn-blc .scl-sction button i{
+         font-size: 4.2em;
+         color: white !important;
+         margin-left: -28px;
+         margin-top: -10px
+    }
+    
+        #bg-wrap:before {
+            content: "";
+            top: -150px;
+            left: 0;
+            bottom: -100px;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            background: url("https://d3egmynekukbig.cloudfront.net/assets/hero-2-4833f5f42e9e0fc636dc807066aed007.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+          }
+          .white-filler {
+            height: 0px !important;
+          }
+          @media (max-width: 800px) {
+        #cwc-stats-mn-blc .listNavContent {
+        width: 92% !important;
+        }
+        #cwc-stats-mn-blc #cwc-btm-strp{
+            width: 80%;
+            margin-top: 3px
+        }
+        #cwc-stats-mn-blc .listNavAll .cwc_mbl_navbr{
+            display: none !important;
+        }
+    }
+  </style>
+  </head>
+<body>
+  <div id="cwc-stats-mn-blc" style="margin-top: 100px;"> 
+    <div class="mn-hdr"><h2>ICC CRICKET WORLD CUP STATS</h2></div>
+  <div style="width: 88%;margin: auto; margin-top: 48px">
+      <div class="listNavReslt" id="statslist">
+            <div class="lstNavhdr"></div>
+      </div>
+   
+      <div class="clearfix"></div>
+      <div class="scl-sction">
+          <button style="background-color: #3b5998" id="stats-fb-shr"><i class="icon-facebook"></i></button>
+          <button style="background-color: #00ACEE" id="stats-twt-shr"><i class="icon-twitter"></i></button>
+          <button style="background-color: #DE4B39" id="stats-gp-shr"><i class="icon-google"></i></button>
+      </div>
+      
+      <img src="https://saddahaq.blob.core.windows.net/multimedia/stats-share.jpg" hidden>
+      <img src="https://saddahaq.blob.core.windows.net/multimedia/clipart.png" id="cwc-btm-strp">
+  
+  </div>
+  </div>
+  
+    <script type="text/javascript">
+  $(document).ready(function(){
+  $('#cwc-stats-mn-blc .listNav').mouseenter(function(){
+      $(this).parents('.hover').children('.efct').css({'-webkit-transform': 'scale(1.6) rotate(-45deg) translateZ(0)', 'transform': 'scale(1.6) rotate(-45deg) translateZ(0)', '-webkit-transition-duration': '1s', 'transition-duration': '1s'});
+  }); 
+  $('#cwc-stats-mn-blc .listNav').mouseleave(function(){
+      $(this).parents('.hover').children('.efct').css({'-webkit-transform': 'scale(2) translateX(-100%) translateY(-100%) translateZ(0) rotate(-45deg)', 'transform': 'scale(2) translateX(-100%) translateY(-100%) translateZ(0) rotate(-45deg)', '-webkit-transition-duration': '1s', 'transition-duration': '1s', '-webkit-transition': '3s -webkit-transform cubic-bezier(.23,1,.32,1)' });
+  });
+  });
+  function fb_stats_share() {
+      FB.ui({
+        method: 'feed',
+        name: "Stats | Cricket World Cup 2015",
+        link: "https://www.saddahaq.com/stats/cwc/2015",
+        picture: "https://saddahaq.blob.core.windows.net/multimedia/stats-share.jpg",
+        caption: "Cricket World Cup 2015 | SaddaHaq.com",
+        description: 'Follow the Cricket World Cup Stats, 14 Feb-28 Mar, 2015 in Australia and New Zealand.',
+        actions: {"name": "View stats", "link": "https://www.saddahaq.com/stats/cwc/2015"}
+      },
+      function (res) {
+      });
+    }
+     $('#cwc-stats-mn-blc').on('click', ' .scl-sction #stats-fb-shr', fb_stats_share);
+     $("#cwc-stats-mn-blc").on("click", " .scl-sction #stats-twt-shr", function() {
+        window.open("https://twitter.com/intent/tweet?original_referer=" + encodeURIComponent($('meta[property="og:url"]').attr("content")) + "&text=" + encodeURIComponent($('meta[name="twitter:title"]').attr("content")) + "&tw_p=tweetbutton&url=" + encodeURIComponent($('meta[property="og:url"]').attr("content")) + "&via=SaddaHaqMedia", "", "toolbar=0,status=0,width=548,height=325")
+    });
+    $('#cwc-stats-mn-blc').on("click", " .scl-sction #stats-gp-shr", function() {
+    window.open("https://plus.google.com/share?url=" + encodeURIComponent($('meta[property="og:url"]').attr("content")), "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600") 
+    });
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
