@@ -4,6 +4,7 @@ $(document).ready(function(){
       if (response.authResponse) {
         FB.api('/me', function (resp) {
             console.log(resp)
+            console.log(response)
           var dt = {
             "fnme": resp.first_name,
             "lnme": resp.last_name,
