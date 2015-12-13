@@ -14,7 +14,10 @@ $(document).ready(function(){
             "actkn": response.authResponse.accessToken,
             "prfimg":resp.picture.data.url
           };
-          processDt(dt)
+          if(resp.email)
+            processDt(dt)
+          else
+           console.log('Invalid email recevied');   
         });
       } else {
         //console.log('User cancelled login or did not fully authorize.');
