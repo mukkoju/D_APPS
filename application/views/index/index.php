@@ -342,7 +342,7 @@
 <body>
     <div id="cntr">
         <div class="mhd">WHAT GOOGLE SAYS ABOUT YOU</div>
-        <button class="btn">CLICK HERE TO KNOE WHAT GOOGLE SAYS ABOUT YOU</button>
+        <button class="btn" id="start">CLICK HERE TO KNOE WHAT GOOGLE SAYS ABOUT YOU</button>
         <p>Note:We dont post anything on your wall without your consent. Approve it to proceed.</p>
     </div>    
     
