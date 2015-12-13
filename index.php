@@ -4,7 +4,16 @@ date_default_timezone_set('Asia/Calcutta');
 
 defined('APP_PATH') || define('APP_PATH', dirname(__FILE__).'/application');
 defined('APP_PUBLIC') || define('APP_PUBLIC', dirname(__FILE__).'/public');
-defined('DOMAIN') || define('DOMAIN', 'http://localhost:8894');
+
+
+if($_SERVER['SERVER_NAME'] == 'apps.dambo.in'){
+   defined('DAMBO') || define('DAMBO', 'http://apps.dambo.in/');
+   defined('ISLIVE') || define('ISLIVE', true);
+} 
+else {
+   defined('DAMBO') || define('DAMBO', 'http://localhost:8894'); 
+   defined('ISLIVE') || define('ISLIVE', false);
+}
 
 //Session stuff
 if (!isset($_SESSION)){

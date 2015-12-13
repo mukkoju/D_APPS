@@ -12,25 +12,9 @@ class Bootstrap {
     $controller->index();
   }
   switch ($url[0]) {
-    case 'login':
-      require APP_PATH . '/controllers/index.php';
-      $controller = new Index();
-      $controller->login();
-      break;
-      require APP_PATH . '/controllers/index.php';
-      $controller = new Index();
-      $controller->register();
-    case 'register';
-      break;
-      require APP_PATH . '/controllers/index.php';
-      $controller = new Index();
-      $controller->post_add();
-    case 'post-add':
-      break;
-      require APP_PATH . '/controllers/index.php';
-      $controller = new Index();
-      $controller->admin();
-    case 'admin':
+    case 'prcs':
+      require APP_PATH . '/models/index.php';
+      echo (new Index_Model())->ProcessReq($_POST);
       break;
     }
   }

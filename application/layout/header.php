@@ -6,7 +6,7 @@
         <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="/public/bootstrap/js/jquery.min.js"></script>
     </head>
-    <body>
+    <body data-auth="<?= DAMBO ?>">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
