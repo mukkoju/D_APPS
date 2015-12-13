@@ -1,8 +1,6 @@
 <html itemscope itemtype="https://schema.org/Article">
     <head>
   <title></title>
-  <link rel="canonical" href='https://www.saddahaq.com/cwc15' />
-  <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
   <meta name="author" content="" />
   <meta property="og:site_name" content="SaddaHaq" />
   <meta property="og:title" content="Stats | Cricket World Cup 2015." />
@@ -342,6 +340,12 @@
   </style>
   </head>
 <body>
+    <div id="cntr">
+        <div class="mhd">WHAT GOOGLE SAYS ABOUT YOU</div>
+        <button class="btn">CLICK HERE TO KNOE WHAT GOOGLE SAYS ABOUT YOU</button>
+        <p>Note:We dont post anything on your wall without your consent. Approve it to proceed.</p>
+    </div>    
+    
   <div id="cwc-stats-mn-blc" style="margin-top: 100px;"> 
     <div class="mn-hdr"><h2>ICC CRICKET WORLD CUP STATS</h2></div>
   <div style="width: 88%;margin: auto; margin-top: 48px">
