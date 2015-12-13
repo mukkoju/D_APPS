@@ -22,7 +22,7 @@
          
          $genImg = $this->genrateImage($data);   
          if($genImg){
-           $this->updateImageInDB($genImg);
+           $this->updateImageInDB($genImg, $data['id']);
            $retrnData = array('id'=>$data['id'], 'img'=>$genImg);
            return '{"status": 1, "msg": "'.json_encode($retrnData).'"}';
          }  
@@ -111,8 +111,8 @@
         }         
     }
     
-    public function updateImageInDB($image){
+    public function updateImageInDB($image, $id){
        $db = $this->db;
-       $tmp = $db->exec("UPDATE _table_app_user SET _Gen_Img_ = ".$db->quote($image)."");
+       $tmp = $db->exec("UPDATE _table_app_user SET _Gen_Img_ = ".$db->quote($image)." WHERE _Fb_Id_ = ".$db->quote($image));
     }
 }
